@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classAndReferredNames>
+    <selfName>com.actionbarsherlock.internal.widget.ScrollingTabContainerView</selfName>
+    <referredNames>com.actionbarsherlock.internal.nineoldandroids.widget.NineHorizontalScrollView</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.IcsAdapterView$OnItemSelectedListener</referredNames>
+    <referredNames>android.view.animation.Interpolator</referredNames>
+    <referredNames>android.view.LayoutInflater</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabClickListener</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.IcsLinearLayout</referredNames>
+    <referredNames>java.lang.Runnable</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.IcsSpinner</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.ScrollingTabContainerView$VisibilityAnimListener</referredNames>
+    <referredNames>com.actionbarsherlock.internal.nineoldandroids.animation.Animator</referredNames>
+    <referredNames>android.content.Context</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabView</referredNames>
+    <referredNames>com.actionbarsherlock.app.ActionBar$Tab</referredNames>
+    <referredNames>android.content.res.Configuration</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.IcsAdapterView</referredNames>
+    <referredNames>android.view.View</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.ScrollingTabContainerView$1</referredNames>
+    <referredNames>com.actionbarsherlock.internal.widget.ScrollingTabContainerView$TabAdapter</referredNames>
+    <referredNames>android.view.animation.DecelerateInterpolator</referredNames>
+    <referredNames>com.actionbarsherlock.R$styleable</referredNames>
+    <referredNames>com.actionbarsherlock.R$attr</referredNames>
+    <referredNames>android.util.AttributeSet</referredNames>
+    <referredNames>android.content.res.TypedArray</referredNames>
+    <referredNames>android.view.ViewGroup$LayoutParams</referredNames>
+    <referredNames>android.widget.LinearLayout$LayoutParams</referredNames>
+    <referredNames>com.actionbarsherlock.R$layout</referredNames>
+    <referredNames>android.view.ViewGroup</referredNames>
+    <referredNames>android.graphics.drawable.Drawable</referredNames>
+    <referredNames>android.widget.AbsListView$LayoutParams</referredNames>
+    <referredNames>android.view.View$OnClickListener</referredNames>
+    <referredNames>android.view.ViewParent</referredNames>
+    <referredNames>android.widget.SpinnerAdapter</referredNames>
+    <referredNames>com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator</referredNames>
+    <referredNames>java.lang.Object</referredNames>
+    <referredNames>java.lang.String</referredNames>
+    <referredNames>com.actionbarsherlock.internal.nineoldandroids.animation.Animator$AnimatorListener</referredNames>
+    <referredNames>android.view.View$MeasureSpec</referredNames>
+</classAndReferredNames>

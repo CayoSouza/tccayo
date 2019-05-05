@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<classAndReferredNames>
+    <selfName>com.github.mobile.ServicesModule</selfName>
+    <referredNames>com.google.inject.AbstractModule</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.CollaboratorService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.client.GitHubClient</referredNames>
+    <referredNames>com.google.inject.Provides</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.CommitService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.ContentsService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.User</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.UserService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.DataService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.EventService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.GistService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.IssueService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.LabelService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.MarkdownService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.MilestoneService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.OrganizationService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.PullRequestService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.RepositoryService</referredNames>
+    <referredNames>com.github.mobile.core.search.SearchUserService</referredNames>
+    <referredNames>org.eclipse.egit.github.core.service.WatcherService</referredNames>
+    <referredNames>java.io.IOException</referredNames>
+</classAndReferredNames>
