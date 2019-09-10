@@ -15,9 +15,9 @@ import java.io.StringWriter;
 @Service
 public class XmlMarshallerService {
 
-    public <T> void marshall(Exportable classAndReferred, Class<T> clazz){
+    public <T> void marshall(Exportable classAndReferred, Class<T> clazz, String filePath){
         try {
-            File file = new File("C:\\Users\\cayo\\Desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\classAndReferred.xml");
+            File file = new File(filePath);
             JAXBContext jaxbContext = JAXBContext.newInstance(clazz);
             Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
             jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
@@ -30,8 +30,6 @@ public class XmlMarshallerService {
 
             System.out.println(xmlStr);
 
-        } catch (PropertyException e) {
-            e.printStackTrace();
         } catch (JAXBException e) {
             e.printStackTrace();
         }

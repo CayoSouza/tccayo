@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml apkVersion="1.0" encoding="UTF-8" ?>
 <!DOCTYPE Workset SYSTEM "http://dependency-analyzer.org/schema/dtd/workset-1.9.dtd">
-<Workset version="10">
+<Workset apkVersion="10">
   <WorksetName>Sample</WorksetName>
   <Options auto-reload="no" include-resources="no" />
   <Classpath shortContainerNames="yes">
@@ -9,6 +9,6 @@
   <ViewFilters />
   <IgnoreFilters />
   <Architecture>
-    <ComponentModel name="Default" />
+    <ComponentModel apkName="Default" />
   </Architecture>
 </Workset>

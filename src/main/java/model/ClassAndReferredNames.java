@@ -6,27 +6,27 @@ import javax.xml.bind.annotation.XmlType;
 import java.util.List;
 
 @XmlRootElement
-@XmlType(propOrder = {"selfName", "referredNames"})
+@XmlType(propOrder = {"className", "refNames"})
 public class ClassAndReferredNames implements Exportable {
 
-    private String selfName;
-    private List<String> referredNames;
+    private String className;
+    private List<String> refNames;
 
-    public String getSelfName() {
-        return selfName;
+    public String getClassName() {
+        return className;
     }
 
     @XmlElement
-    public void setSelfName(String selfName) {
-        this.selfName = selfName;
+    public void setClassName(String className) {
+        this.className = className;
     }
 
-    public List<String> getReferredNames() {
-        return referredNames;
+    public List<String> getRefNames() {
+        return refNames;
     }
 
-    @XmlElement
-    public void setReferredNames(List<String> referredNames) {
-        this.referredNames = referredNames;
+    @XmlElement(name = "refName")
+    public void setRefNames(List<String> refNames) {
+        this.refNames = refNames;
     }
 }
