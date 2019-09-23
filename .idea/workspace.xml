@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90c840b3-c686-4eff-be21-4a16f586802b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/AnalyzerFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/analyzer/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="3bf5059f-0fbc-4db3-8977-008a917955e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample.ws" beforeDir="false" afterPath="$PROJECT_DIR$/Sample.ws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teste.ws" beforeDir="false" afterPath="$PROJECT_DIR$/Teste.ws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClassNameFinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleMonitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sample1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Teste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClassAndReferredNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClassAndReferredNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/AnalyzerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/AnalyzerFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/analyzer/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/analyzer/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/XmlMarshallerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/XmlMarshallerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/classAndReferred.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/github-dex2jar.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ClassNameFinder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleMonitor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/cayoTcc.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Sample1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Teste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/classAndReferred.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github-dex2jar.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/ClassAndReferredNames.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/ClassAndReferredNames.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/air.bg.lan.Monopoli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/air.bg.lan.Monopoli.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/github.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/github.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/air.bg.lan.Monopoli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/air.bg.lan.Monopoli.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/analyzer/AnalyzerFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/analyzer/AnalyzerFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/analyzer/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/analyzer/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/XmlMarshallerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/XmlMarshallerService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,15 +34,23 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1Qcz6EvhQyVF9o6WfCVFZHhMTch" />
+  <component name="ProjectId" id="1RD9eia2FQvtV88lDaSR1L1Iw3j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.27931035" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,17 +64,37 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="analyzer.Application" />
+      <module name="cayoTcc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="analyzer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="90c840b3-c686-4eff-be21-4a16f586802b" name="Default Changelist" comment="" />
-      <created>1568084494081</created>
+      <changelist id="3bf5059f-0fbc-4db3-8977-008a917955e7" name="Default Changelist" comment="" />
+      <created>1569190898916</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1568084494081</updated>
-      <workItem from="1568084497096" duration="1126000" />
+      <updated>1569190898916</updated>
+      <workItem from="1569190909220" duration="8773000" />
     </task>
     <servers />
   </component>
@@ -95,5 +111,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/analyzer/AnalyzerFacade.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/analyzer/Application.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/analyzer/AnalyzerFacade.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -26,9 +26,9 @@ public class XmlMarshallerService {
 
             StringWriter sw = new StringWriter();
             jaxbMarshaller.marshal(classAndReferred, sw);
-            String xmlStr = sw.toString();
-
-            System.out.println(xmlStr);
+//            String xmlStr = sw.toString();
+//
+//            System.out.println(xmlStr);
 
         } catch (JAXBException e) {
             e.printStackTrace();

@@ -7,6 +7,8 @@ import org.pfsw.tools.cda.base.model.GenericClassContainer;
 import org.pfsw.tools.cda.base.model.Workset;
 import org.pfsw.tools.cda.base.model.workset.ClasspathPartDefinition;
 import org.pfsw.tools.cda.core.init.WorksetInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import service.XmlMarshallerService;
 
@@ -17,10 +19,14 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 public class AnalyzerFacade {
+    private static final Logger logger = LoggerFactory.getLogger(AnalyzerFacade.class);
 
     //TODO: configurar spring
-    @Autowired
-    XmlMarshallerService xmlMarshallerService;
+//    @Autowired
+//    XmlMarshallerService xmlMarshallerService;
+
+    public final static String JARS_LOCATION = "C:\\Users\\cayo\\Desktop\\desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\";
+    public final static String EXCLUDE_REGEX_LIST = "java.lang.*|java.util.*|android.app.Activity*|android.app.Fragment*|java.*|javax.*|com.sun.*|org.xml.sax*|org.omg.*|org.w3c.dom.*";
 
     public void analyze() {
 
@@ -56,10 +62,15 @@ public class AnalyzerFacade {
     }
 
     public void analyze2() {
-        Workset workset = createEnvironment("Workset1", "C:\\Users\\cayo\\Desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\*.jar");
+        logger.info("Criando workset com os jars fornecidos em: {}", JARS_LOCATION);
+        long wsStartTime = System.currentTimeMillis();
+        Workset workset = createEnvironment("Workset1", JARS_LOCATION + "*.jar");
+        long wsEndTime = System.currentTimeMillis();
+        logger.info("Workset carregado em: {}ms", (wsEndTime - wsStartTime));
 
         Program program = new Program();
 
+        long startTime = System.currentTimeMillis();
         /* Para cada apk */
         for (GenericClassContainer gcc : workset.getClassContainers()) {
             String apkName = gcc.getSimpleName();
@@ -67,12 +78,17 @@ public class AnalyzerFacade {
             //TODO: add version
 
             /* Popula a lista de classes e classes referenciadas */
+            logger.info("Criando lista de classes para o apk: {}", apkName);
             List<ClassAndReferredNames> classAndRefs = buildClassAndRefList(gcc);
+            long endTime = System.currentTimeMillis();
+            logger.info("TEMPO PARA ANALIZAR O APK {}: {}ms", apkName, (endTime - startTime));
+
             program.setClassAndReferredNames(classAndRefs);
 
             /* Salva o XML do apk */
             //TODO: acertar path
-            exportToXML(program, "C:\\Users\\cayo\\Desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\" + apkName.replace(".jar", "") + ".xml");
+            logger.info("Salvando lista de classes no arquivo XML na em: {}", JARS_LOCATION);
+            exportToXML(program, JARS_LOCATION + apkName.replace(".jar", "") + ".xml");
         }
     }
 
@@ -85,12 +101,33 @@ public class AnalyzerFacade {
         List<ClassAndReferredNames> classAndRefs = new ArrayList<>();
 
 //        for(ClassInformation classInfo : workset.getAllContainedClasses()) {
+
+//        ClassesSearchResult<ClassInformation> classesSearchResult = new ClassesSearchResult<>(
+//                gcc.getAllContainedClasses()[0],
+//                gcc.getAllContainedClasses()
+//        );
+
         for (ClassInformation classInfo : gcc.getAllContainedClasses()) {
+//            logger.info("Iniciando analyzer para: {}", classInfo.getName());
+//            DependencyAnalyzer analyzer = new DependencyAnalyzer(classInfo);
+//            analyzer.analyze();
+//            DependencyInfo result = analyzer.getResult();
+//
+//            List<ClassInformation> classes = Arrays.asList(result.getAllReferredClasses());
+
             ClassAndReferredNames carn = new ClassAndReferredNames();
             carn.setClassName(classInfo.getClassName());
-            List<String> referredNames = classInfo.getReferredClasses().stream().map(ClassInformation::getClassName).collect(Collectors.toList());
+            List<String> referredNames = classInfo.getReferredClasses().stream()
+                    .map(ClassInformation::getClassName)
+                    .filter(s -> !s.matches(EXCLUDE_REGEX_LIST))
+                    .collect(Collectors.toList());
+
+//            List<String> referredNames = classes.stream()
+//                    .map(ClassInformation::getClassName)
+//                    .collect(Collectors.toList());
             carn.setRefNames(referredNames);
             classAndRefs.add(carn);
+
         }
 
         return classAndRefs;
@@ -104,4 +141,6 @@ public class AnalyzerFacade {
         wsInitializer.initializeWorksetAndWait(null);
         return workset;
     }
+
+
 }
