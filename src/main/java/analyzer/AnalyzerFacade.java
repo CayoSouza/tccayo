@@ -25,8 +25,11 @@ public class AnalyzerFacade {
 //    @Autowired
 //    XmlMarshallerService xmlMarshallerService;
 
-    public final static String JARS_LOCATION = "C:\\Users\\cayo\\Desktop\\desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\";
-    public final static String EXCLUDE_REGEX_LIST = "java.lang.*|java.util.*|android.app.Activity*|android.app.Fragment*|java.*|javax.*|com.sun.*|org.xml.sax*|org.omg.*|org.w3c.dom.*";
+    private final static String JARS_LOCATION = "C:\\Users\\cayo\\Desktop\\desktop\\TCCAYO\\tcc\\samples\\cayoTcc\\src\\main\\resources\\jars\\";
+    private final static String EXCLUDE_REGEX_LIST = "java.lang.*|java.util.*|android.app.Activity.*|android.app.Fragment.*" +
+            "|java.*|javax.*|com.sun.*|org.xml.sax*|org.omg.*|org.w3c.dom.*|android.util.*|android.widget.*" +
+            "|android.view.*|android.support.*|android.content.*|android.os.*|android.graphics.*|android.animation.*" +
+            "|com.facebook.*|com.google.android.gms.*";
 
     public void analyze() {
 
@@ -115,18 +118,20 @@ public class AnalyzerFacade {
 //
 //            List<ClassInformation> classes = Arrays.asList(result.getAllReferredClasses());
 
-            ClassAndReferredNames carn = new ClassAndReferredNames();
-            carn.setClassName(classInfo.getClassName());
-            List<String> referredNames = classInfo.getReferredClasses().stream()
-                    .map(ClassInformation::getClassName)
-                    .filter(s -> !s.matches(EXCLUDE_REGEX_LIST))
-                    .collect(Collectors.toList());
+            if (!classInfo.getName().matches(EXCLUDE_REGEX_LIST)) {
+                ClassAndReferredNames carn = new ClassAndReferredNames();
+                carn.setClassName(classInfo.getClassName());
+                List<String> referredNames = classInfo.getReferredClasses().stream()
+                        .map(ClassInformation::getClassName)
+                        .filter(s -> !s.matches(EXCLUDE_REGEX_LIST))
+                        .collect(Collectors.toList());
 
-//            List<String> referredNames = classes.stream()
-//                    .map(ClassInformation::getClassName)
-//                    .collect(Collectors.toList());
-            carn.setRefNames(referredNames);
-            classAndRefs.add(carn);
+    //            List<String> referredNames = classes.stream()
+    //                    .map(ClassInformation::getClassName)
+    //                    .collect(Collectors.toList());
+                carn.setRefNames(referredNames);
+                classAndRefs.add(carn);
+            }
 
         }
 
