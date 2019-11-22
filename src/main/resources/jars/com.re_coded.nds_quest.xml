@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<program>
+    <name>com.re_coded.nds_quest.jar</name>
+    <version>0</version>
+    <classes>
+        <className>com.qihoo.util.Configuration</className>
+    </classes>
+    <classes>
+        <className>com.qihoo.util.DtcLoader</className>
+    </classes>
+    <classes>
+        <className>com.qihoo.util.QHDialog</className>
+        <refName>com.qihoo.util.ᵢˋ</refName>
+    </classes>
+    <classes>
+        <className>com.qihoo.util.ᵢˋ</className>
+        <refName>android.app.AlertDialog$Builder</refName>
+        <refName>com.qihoo.util.ᵢˎ</refName>
+        <refName>android.app.AlertDialog</refName>
+    </classes>
+    <classes>
+        <className>com.qihoo.util.ᵢˎ</className>
+        <refName>com.qihoo.util.ᵢˋ</refName>
+    </classes>
+    <classes>
+        <className>com.qihoo.util.ᵢˏ</className>
+    </classes>
+    <classes>
+        <className>com.stub.StubApp</className>
+        <refName>android.app.Application</refName>
+        <refName>dalvik.system.DexFile</refName>
+        <refName>android.location.Location</refName>
+        <refName>android.location.LocationManager</refName>
+        <refName>com.qihoo.bugreport.CrashReport</refName>
+        <refName>com.qihoo.jiagutracker.TrackerMain</refName>
+        <refName>com.qihoo.util.bxb.init.DJadInit</refName>
+        <refName>com.qihoo.util.ᵢˏ</refName>
+        <refName>com.qihoo.util.Configuration</refName>
+    </classes>
+</program>
